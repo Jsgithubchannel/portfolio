@@ -20,6 +20,13 @@ navbarMenu.addEventListener("click", (event) => {
   scrollIntoView(link);
 });
 
+//Make home slowly fade to transparent as the window scrolls down.home__contact
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 // Handle click on "Contact Me" button on home
 const homeContactBtn = document.querySelector(".home__contact");
 homeContactBtn.addEventListener("click", () => {
