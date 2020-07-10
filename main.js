@@ -54,8 +54,14 @@ workBtnContainer.addEventListener("click", (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if (filter == null) return;
 
-  projectContainer.classList.add("anim-out");
+  //Remove selection from the previous item and select the new one
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
+  const target =
+    e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  target.classList.add("selected");
 
+  projectContainer.classList.add("anim-out");
   setTimeout(() => {
     // dataset은 data-%&^% 라고 정의한 얘들을 한번에 부르는 것
     projects.forEach((project) => {
