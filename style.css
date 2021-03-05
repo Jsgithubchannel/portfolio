@@ -253,7 +253,7 @@ p {
 }
 
 .job__logo {
-  width: 100px;
+  font-size: 40px;
 }
 
 /* Skill */
@@ -276,7 +276,7 @@ p {
 .skillset__left {
   flex-basis: 60%;
   background-color: var(--color-dark-grey);
-  padding: 20px 40px;
+  padding: 50px 40px;
 }
 
 .skill {
@@ -309,7 +309,7 @@ p {
 
 .tools,
 .etc {
-  padding: 20px;
+  padding: 50px;
 }
 
 /* Work */
