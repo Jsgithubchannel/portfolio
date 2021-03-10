@@ -30,8 +30,8 @@
     <!--Navbar-->
     <nav id="navbar">
       <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">Jisu</a>
+        <img src="imgs/navbar_icon.png" alt="navbar_icon">
+        <a href="#">Jisu's portfolio</a>
       </div>
 
       <ul class="navbar__menu">
@@ -56,7 +56,7 @@
           alt="Jisu's profile photo"
           class="home__avatar"
         />
-        <h1 class="home__title">Hello, <br />멋쟁이 사자가 <br />되고 싶은 홍지수</h1>
+        <h1 class="home__title">멋쟁이 사자가 <br />되고 싶은 홍지수</h1>
         <button class="home__contact">CONTACT ME</button>
       </div>
     </section>
@@ -65,10 +65,7 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-        dignissimos at maxime quam doloribus sit esse dolore adipisci, aut
-        dolorem quis optio explicabo architecto reprehenderit exercitationem,
-        quod eius quas labore.
+        프런트 엔드 기술, 언어, 자격증, 활동 경력으로 저를 나타냈습니다.
       </p>
 
       <div class="about__majors">
@@ -101,7 +98,7 @@
           <h2 class="major__title">Certificate</h2>
           <div class="major__description">
             Photoshop, OPIC, TOEIC, <br />
-            Information processing technician
+            정보처리기능사
             <br/>
           </div>
         </div>
@@ -112,7 +109,7 @@
           <i class="fas fa-laptop-code job__logo"></i>
           <div class="job__description">
             <p class="job__name">
-              a Front-End Developer at a PKNU Startup Club
+              부경대학교 창업동아리에서 프런트엔드 개발자로 활동
             </p>
             <p class="job__period">2020 Aug - Until now</p>
           </div>
@@ -124,12 +121,9 @@
     <section id="skills" class="section">
       <div class="section__container">
         <h1>Skills</h1>
-        <h2>Skills & Attribute</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-          vitae, eligendi vel delectus natus quidem odio doloribus cumque beatae
-          dolore doloremque voluptate. Placeat minima quidem accusantium
-          reiciendis magni accusamus laboriosam?
+         사용해본 기술 스택의 능숙도를 퍼센트로 나타냈습니다. <br />
+         기타 항목으로 툴과 컴퓨터 관련 기술을 작성했습니다.
         </p>
         <div class="skillset">
           <div class="skillset__left">
@@ -193,7 +187,6 @@
               <h3 class="skillset__title">ETC</h3>
               <ul class="etc__list">
                 <li><span>Git</span></li>
-                <li><span>Math</span></li>
               </ul>
             </div>
           </div>
@@ -204,22 +197,22 @@
     <section id="work" class="section">
       <div class="section__container">
         <h1>My work</h1>
-        <h3>Projects</h3>
+        <h3>개발한 프로젝트 목록입니다.<br />개발 연도에 따라 분류했습니다.</h3>
         <div class="work__categories">
 
           <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">8</span>
+            전체보기 <span class="category__count">8</span>
           </button>
-          <button class="category__btn" data-filter="front-end">
-            My ideas <span class="category__count">3</span>
+          <button class="category__btn" data-filter="2021">
+            2021년 <span class="category__count">2</span>
           </button>
-          <button class="category__btn" data-filter="back-end">
-            Clone coding <span class="category__count">3</span>
+          <button class="category__btn" data-filter="2020">
+            2020년 <span class="category__count">3</span>
           </button>
         </div>
 
         <div class="work__projects">
-          <a href="#" class="project" target="blank" data-type="front-end">
+          <a href="#" class="project" target="blank" data-type="2021">
             <img src="imgs/projects/1.jpg" alt="Lingory" class="project__img" />
             <div class="project__description">
               <h3>Lingory</h3>
@@ -227,59 +220,35 @@
             </div>
           </a>
 
-          <a href="#" class="project" target="blank" data-type="front-end">
+          <a href="#" class="project" target="blank" data-type="2020">
             <img src="imgs/projects/2.jpg" alt="To Do List" class="project__img" />
             <div class="project__description">
               <h3>To Do List</h3>
-              <span>HTML, CSS, VanillaJS & API</span>
+              <span>HTML, CSS, JavaScript & API</span>
             </div>
           </a>
 
-          <a href="#" class="project" target="blank" data-type="front-end">
+          <a href="#" class="project" target="blank" data-type="2021">
             <img src="imgs/projects/3.jpg" alt="Portfolio" class="project__img" />
             <div class="project__description">
-              <h3>Portfolio</h3>
-              <span>HTML, CSS & VanillaJS</span>
+              <h3>Portfolio for Likelion</h3>
+              <span>HTML, CSS & JavaScript</span>
             </div>
           </a>
 
-          <a href="https://jsgithubchannel.github.io/apple-clone-coding/" class="project" target="blank" data-type="back-end">
+          <a href="https://jsgithubchannel.github.io/apple-clone-coding/" class="project" target="blank" data-type="2020">
             <img src="imgs/projects/4.jpg" alt="Apple Clone Coding" class="project__img" />
             <div class="project__description">
               <h3>Apple Clone Coding</h3>
-              <span>HTML, CSS & VanillaJS</span>
+              <span>HTML, CSS & JavaScript</span>
             </div>
           </a>
 
-          <a href="#" class="project" target="blank" data-type="back-end">
+          <a href="#" class="project" target="blank" data-type="2020">
             <img src="imgs/projects/5.png" alt="Youtube" class="project__img" />
             <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="back-end">
-            <img src="imgs/projects/6.jpg" alt="Youtube" class="project__img" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="mobile">
-            <img src="imgs/projects/7.jpg" alt="Youtube" class="project__img" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="mobile">
-            <img src="imgs/projects/8.jpg" alt="Youtube" class="project__img" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
+              <h3>Kill the Bugs Game</h3>
+              <span>HTML, CSS & JavaScript</span>
             </div>
           </a>
         </div>
@@ -293,12 +262,12 @@
         <a href="https://github.com/Jsgithubchannel" target="_blank">
           <i class="fab fa-github"></i>
         </a>
-        <a href="#" target="_blank">
-          <i class="fa fa-linkedin-square"></i>
+        <a href="https://breathtaking-life.tistory.com/" target="_blank">
+          <i class="fab fa-blogger"></i>
         </a>
       </div>
       <p class="contact__rights">
-        2020 Dream Coding Jisu - All rights reserved
+        2021 Jisu's portfolio for Likelion - All rights reserved
       </p>
     </section>
 

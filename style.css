@@ -1,18 +1,19 @@
 /* Global */
-
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   /* Color */
   --color-main: #da802c;
-  --color-dark-main: #b1641cea;
+  --color-dark-main: #c1854d;
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
-  --color-dark-grey: #4d4d4d;
-  --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -69,10 +70,11 @@ button {
 
 /* Typography */
 h1 {
+  font-family: "yg-jalnan";
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
-  margin: 16px 0px;
+  color: #452f1a;
+  margin: 0 0 16px 0;
 }
 
 h2 {
@@ -120,8 +122,13 @@ p {
 }
 
 .navbar__logo {
+  display: flex;
   font-size: var(--font-medium);
   font-style: var(--weight-semi-bold);
+}
+.navbar__logo img {
+  margin-right: 5px;
+  width: 50px;
 }
 .navbar__menu__item {
   padding: 8px 12px;
@@ -162,7 +169,7 @@ p {
 
 .home__title,
 .home__description {
-  color: var(--color-white);
+  color: #da542c;
 }
 
 .home__contact {
@@ -176,12 +183,12 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-main);
 }
 
 /* Section common */
 .section {
-  padding: 50px;
+  padding: 80px;
   text-align: center;
   margin: auto;
 }
@@ -204,8 +211,8 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  color: var(--color-main);
+  border: 1px solid var(--color-dark-main);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -215,13 +222,13 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: rgb(248, 180, 53);
   transform: rotate(-30deg) scale(1.1);
 }
 
 .major__title,
 .major__description {
-  color: var(--color-dark-grey);
+  color: #4d4d4d;
 }
 
 .major__description {
@@ -274,7 +281,7 @@ p {
 
 .skillset__left {
   flex-basis: 60%;
-  background-color: var(--color-dark-grey);
+  background-color: #4d4d4d;
   padding: 50px 40px;
 }
 
@@ -290,7 +297,7 @@ p {
 .skill__bar {
   width: 100%;
   height: 3px;
-  background-color: var(--color-grey);
+  background-color: #616161;
 }
 
 .skill__value {
@@ -303,7 +310,7 @@ p {
 }
 
 .tools {
-  background-color: var(--color-grey);
+  background-color: #616161;
 }
 
 .tools,
@@ -327,7 +334,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-main);
   color: var(--color-white);
 }
 
@@ -346,7 +353,7 @@ p {
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  transform: translate(0, 20%);
+  transform: translate(0, 35%);
 
   /* Animated effect */
   position: absolute;
@@ -430,7 +437,9 @@ p {
   background-color: var(--color-dark-main);
 }
 
-.contact__title,
+.contact__title {
+  color: #452f1a;
+}
 .contact__email,
 .contact__rights {
   color: var(--color-white);
@@ -447,7 +456,7 @@ p {
 
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-pink);
+  color: #452f1ab7;
   transition: all var(--animation-duration) ease-in;
 }
 
@@ -569,5 +578,13 @@ p {
     line-height: 50px;
     right: 16px;
     bottom: 16px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .work__projects {
+    flex-wrap: nowrap;
+  }
+  .project {
+    margin: 0 5px;
   }
 }
