@@ -525,6 +525,10 @@ p {
     padding-top: 40px;
   }
 
+  .language {
+    margin-bottom: 30px;
+  }
+
   .about__majors {
     flex-direction: column;
     margin-top: 30px;
